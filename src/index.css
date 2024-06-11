@@ -1,11 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: inherit;
+  font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }

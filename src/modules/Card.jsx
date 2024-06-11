@@ -1,23 +1,30 @@
 import './Cards.modules.css'
+import PropTypes from 'prop-types'
 
-const Card = ({ name, profession, content }) => {
+const Card = ({ name, imageLink, position, text, size = '200px' }) => {
   return (
     <div className="card">
       <img
         className="card__image"
-        src="./public/assets/AlexCoqaux-vins.png"
-        alt=""
+        src={imageLink}
+        alt={name}
+        width={size}
+        height={size}
       />
       <div className="card__content">
-        <h2 className="card__name">Isabelle</h2>
-        <p className="card__profession">Professeur</p>
-        <p className="card__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
-          nesciunt maxime ducimus deleniti inventore facilis.
-        </p>
+        <h2 className="card__name">{name}</h2>
+        <p className="card__position">{position}</p>
+        <p className="card__text">{text}</p>
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  imageLink: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 }
 
 export default Card

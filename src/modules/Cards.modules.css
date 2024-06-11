@@ -13,12 +13,16 @@
   }
 
   .card__name {
-    margin-bottom: 1em;
+    font-family: serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
   }
 
-  .card__profession {
-    margin-bottom: 1em;
-    font-weight: 600;
+  .card__position {
+    font-family: serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    font-weight: 500;
   }
 
   .card__text {
