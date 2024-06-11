@@ -1,0 +1,27 @@
+.card {
+  margin: 1rem;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  max-width: 60ch;
+  gap: 1rem;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .card__image {
+    border-radius: 50%;
+  }
+
+  .card__name {
+    margin-bottom: 1em;
+  }
+
+  .card__profession {
+    margin-bottom: 1em;
+    font-weight: 600;
+  }
+
+  .card__text {
+    max-width: 80%;
+  }
+}
